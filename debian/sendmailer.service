@@ -1,0 +1,13 @@
+[Unit]
+Description=sendmailer parent service
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+ExecReload=/bin/true
+WorkingDirectory=/etc/sendmailer
+
+[Install]
+WantedBy=multi-user.target

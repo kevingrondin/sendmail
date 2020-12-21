@@ -1,0 +1,3 @@
+sendmailer.js usr/share/sendmailer
+package.json usr/share/sendmailer
+node_modules usr/share/sendmailer

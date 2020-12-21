@@ -1,0 +1,14 @@
+[Unit]
+Description=sendmailer %I
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+Restart=no
+WorkingDirectory=/etc/sendmailer/%i
+ExecStart=/usr/bin/node /usr/share/sendmailer/sendmailer.js
+RuntimeMaxSec=240
+
+[Install]
+WantedBy=multi-user.target

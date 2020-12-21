@@ -1,0 +1,11 @@
+Source: sendmailer
+Build-Depends: debhelper (>= 9), npm
+Section: base
+Priority: optional
+Maintainer: Kevin grondin <kevingrondin@outlook.com>
+Standards-Version: 1.1.2
+
+Package: sendmailer
+Architecture: all
+Depends: nodejs
+Description: Send dog by email without node_modules
